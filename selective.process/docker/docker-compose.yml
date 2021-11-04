@@ -1,0 +1,20 @@
+version: '3.4'
+services:
+  itau:
+    image: itau
+    restart: always
+    build: ./
+    working_dir: /itau
+    environment:
+      TZ: America/Sao_Paulo
+    volumes:
+      - ../:/itau
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    command: mvn clean spring-boot:run
+    networks:
+      - itau-networks
+networks:
+  itau-networks:
+    driver: bridge

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import static br.com.itau.selective.process.commons.constant.ApplicationConstant.Password.V1.PASSWORD_VALIDATE;
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
 @Slf4j
 @RestController
@@ -20,8 +21,8 @@ public class PasswordController {
     @Autowired
     private PasswordService passwordService;
 
-    @PostMapping(path = PASSWORD_VALIDATE)
-    public ResponseEntity<PasswordResponse> validate(@RequestBody UserRequest userRequest) {
+    @PostMapping(path = PASSWORD_VALIDATE, consumes = APPLICATION_JSON_VALUE, produces = APPLICATION_JSON_VALUE)
+    public ResponseEntity<PasswordResponse> validatePassword(@RequestBody UserRequest userRequest) {
         return new ResponseEntity<>(passwordService.validate(userRequest), HttpStatus.CREATED);
     }
 }

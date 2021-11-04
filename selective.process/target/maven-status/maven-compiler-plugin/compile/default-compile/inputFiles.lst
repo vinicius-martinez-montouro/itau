@@ -1,0 +1,12 @@
+/itau/src/main/java/br/com/itau/selective/process/model/UserRequest.java
+/itau/src/main/java/br/com/itau/selective/process/commons/handler/CustomHandler.java
+/itau/src/main/java/br/com/itau/selective/process/commons/exception/model/ErrorResponse.java
+/itau/src/main/java/br/com/itau/selective/process/model/PasswordResponse.java
+/itau/src/main/java/br/com/itau/selective/process/utils/StringUtils.java
+/itau/src/main/java/br/com/itau/selective/process/utils/PasswordUtils.java
+/itau/src/main/java/br/com/itau/selective/process/Application.java
+/itau/src/main/java/br/com/itau/selective/process/service/impl/PasswordServiceImpl.java
+/itau/src/main/java/br/com/itau/selective/process/commons/constant/ApplicationConstant.java
+/itau/src/main/java/br/com/itau/selective/process/controller/PasswordController.java
+/itau/src/main/java/br/com/itau/selective/process/commons/exception/PreconditionException.java
+/itau/src/main/java/br/com/itau/selective/process/service/PasswordService.java

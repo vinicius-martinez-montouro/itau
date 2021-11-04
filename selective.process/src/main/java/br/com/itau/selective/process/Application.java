@@ -3,6 +3,9 @@ package br.com.itau.selective.process;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author vinicius.montouro
+ */
 @SpringBootApplication
 public class Application {
 
